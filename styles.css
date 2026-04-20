@@ -48,7 +48,6 @@
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(192,57,43,0.18);
       transition: background .3s;
-      /* iOS Safari: garante que a navbar fique acima de tudo */
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
     }
@@ -67,6 +66,7 @@
     .nav-links {
       display: flex; gap: 2.4rem;
       list-style: none;
+      align-items: center;
     }
     .nav-links a {
       font-family: var(--font-body);
@@ -86,6 +86,33 @@
     }
     .nav-links a:hover { color: var(--light); }
     .nav-links a:hover::after { width: 100%; }
+
+    /* Redes sociais na navbar */
+    .nav-socials {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      margin-left: .4rem;
+      padding-left: 1.6rem;
+      border-left: 1px solid #222;
+    }
+    .nav-social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      color: var(--muted) !important;
+      border: 1px solid #2a2a2a;
+      border-radius: 4px;
+      transition: color .2s, border-color .2s, background .2s !important;
+    }
+    .nav-social-link::after { display: none !important; }
+    .nav-social-link:hover {
+      color: var(--red) !important;
+      border-color: rgba(192,57,43,0.4) !important;
+      background: rgba(192,57,43,0.06);
+    }
 
     .hamburger {
       display: none; flex-direction: column; gap: 5px;
@@ -111,6 +138,7 @@
     .mobile-menu.open { display: block; }
     .mobile-menu ul { list-style: none; }
     .mobile-menu ul li { padding: .8rem 0; border-bottom: 1px solid #1e1e1e; }
+    .mobile-menu ul li:last-child { border-bottom: none; }
     .mobile-menu ul a {
       font-family: var(--font-body);
       font-size: 1.1rem;
@@ -119,6 +147,34 @@
       color: var(--muted);
     }
     .mobile-menu ul a:hover { color: var(--red); }
+
+    /* Redes sociais no menu mobile */
+    .mobile-socials {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.4rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #1e1e1e;
+    }
+    .mobile-social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1.1rem;
+      border: 1px solid #2a2a2a;
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: .88rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color .2s, border-color .2s, background .2s;
+    }
+    .mobile-social-btn:hover {
+      color: var(--red);
+      border-color: rgba(192,57,43,0.4);
+      background: rgba(192,57,43,0.06);
+    }
 
     #hero {
       min-height: 100vh;
@@ -497,6 +553,7 @@
       opacity: .85;
     }
 
+    /* Footer */
     footer {
       background: #050505;
       border-top: 1px solid rgba(192,57,43,0.15);
@@ -511,6 +568,34 @@
     }
     .footer-logo span { color: var(--red); }
     .footer-copy { font-size: .78rem; color: #444; font-family: var(--font-mono); }
+
+    /* Redes sociais no footer */
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
+    .footer-social-links {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .footer-social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      color: #444;
+      border: 1px solid #1e1e1e;
+      border-radius: 4px;
+      transition: color .2s, border-color .2s, background .2s;
+    }
+    .footer-social-icon:hover {
+      color: var(--red);
+      border-color: rgba(192,57,43,0.35);
+      background: rgba(192,57,43,0.06);
+    }
     .footer-since {
       font-family: var(--font-mono); font-size: .72rem;
       color: rgba(192,57,43,0.5);
@@ -550,4 +635,7 @@
 
       .about-stats { grid-template-columns: 1fr 1fr; }
       .services-grid { grid-template-columns: 1fr; }
+
+      .footer-right { flex-direction: row; }
+      .mobile-socials { flex-wrap: wrap; }
     }
