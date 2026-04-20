@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VB Automotive – Oficina desde 2003</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">
+
+      <span>VB<span style="color:#c0392b">·</span>AUTOMOTIVE</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#why">Por Que Nós</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">Sobre</a></li>
+      <li><a href="#services" onclick="closeMobile()">Serviços</a></li>
+      <li><a href="#why" onclick="closeMobile()">Por Que Nós</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contato</a></li>
+    </ul>
+  </div>
+
+  <section id="hero">
+    <svg class="gear-bg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#c0392b" d="M85 5h30l5 20a65 65 0 0 1 15 6l18-10 21 21-10 18a65 65 0 0 1 6 15l20 5v30l-20 5a65 65 0 0 1-6 15l10 18-21 21-18-10a65 65 0 0 1-15 6l-5 20H85l-5-20a65 65 0 0 1-15-6l-18 10-21-21 10-18a65 65 0 0 1-6-15L10 115V85l20-5a65 65 0 0 1 6-15L26 47l21-21 18 10a65 65 0 0 1 15-6L85 5Z"/>
+      <circle cx="100" cy="100" r="38" fill="#0a0a0a"/>
+    </svg>
+    <svg class="gear-bg2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#c0392b" d="M85 5h30l5 20a65 65 0 0 1 15 6l18-10 21 21-10 18a65 65 0 0 1 6 15l20 5v30l-20 5a65 65 0 0 1-6 15l10 18-21 21-18-10a65 65 0 0 1-15 6l-5 20H85l-5-20a65 65 0 0 1-15-6l-18 10-21-21 10-18a65 65 0 0 1-6-15L10 115V85l20-5a65 65 0 0 1 6-15L26 47l21-21 18 10a65 65 0 0 1 15-6L85 5Z"/>
+      <circle cx="100" cy="100" r="38" fill="#0a0a0a"/>
+    </svg>
+
+    <p class="hero-label">Oficina Mecânica — Alvorada, RS</p>
+    <h1 class="hero-title">
+      <span class="stroke">PRECISÃO</span>
+      <span class="red">& CONFIANÇA</span>
+    </h1>
+    <p class="hero-sub">Mais de 20 anos cuidando do seu veículo com profissionalismo, qualidade e atenção a cada detalhe.</p>
+    <div class="hero-ctas">
+      <a href="tel:5134474275" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 5.38 5.38l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        Ligar Agora
+      </a>
+      <a href="#services" class="btn-outline">Ver Serviços →</a>
+    </div>
+    <div class="hero-badge">
+      <div class="line"></div>
+      <p>SINCE 2003 · ALVORADA · RS</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-text reveal">
+      <p class="section-label">Sobre Nós</p>
+      <h2 class="section-title">Tradição e <em>Expertise</em> Automotiva</h2>
+      <div class="divider"></div>
+      <p>A VB Automotive nasceu em 2003 com uma missão clara: oferecer serviço mecânico de alta qualidade com a confiança de quem realmente entende de automóveis.</p>
+      <p>Localizada em Alvorada, RS, nossa oficina atende com dedicação cada cliente, tratando seu veículo com o mesmo cuidado que você trata sua família.</p>
+      <p>Somos especialistas em diagnóstico, manutenção preventiva e corretiva, com equipamentos modernos e profissionais treinados para os desafios da mecânica atual.</p>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Anos de experiência</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3k+</div>
+          <div class="stat-label">Clientes atendidos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Comprometimento</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Confiança</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-visual reveal">
+      <div class="about-img-frame">
+        <div class="about-img-inner">
+          <svg class="gear-illus" width="260" height="260" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="opacity:.18;">
+            <path fill="#c0392b" d="M85 5h30l5 20a65 65 0 0 1 15 6l18-10 21 21-10 18a65 65 0 0 1 6 15l20 5v30l-20 5a65 65 0 0 1-6 15l10 18-21 21-18-10a65 65 0 0 1-15 6l-5 20H85l-5-20a65 65 0 0 1-15-6l-18 10-21-21 10-18a65 65 0 0 1-6-15L10 115V85l20-5a65 65 0 0 1 6-15L26 47l21-21 18 10a65 65 0 0 1 15-6L85 5Z"/>
+            <circle cx="100" cy="100" r="38" fill="none" stroke="#c0392b" stroke-width="4"/>
+            <line x1="72" y1="72" x2="128" y2="128" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+            <line x1="128" y1="72" x2="72" y2="128" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+          <div style="position:absolute;text-align:center;">
+            <div style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--light);opacity:.7;letter-spacing:.15em;">VB AUTOMOTIVE</div>
+            <div style="font-family:var(--font-mono);font-size:.7rem;color:var(--red);letter-spacing:.3em;margin-top:.3rem;">SINCE 2003</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services-header reveal">
+      <p class="section-label">Nossos Serviços</p>
+      <h2 class="section-title">O Que Fazemos <em>Melhor</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="services-grid reveal">
+
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <h3 class="service-name">Diagnóstico com Osciloscópio</h3>
+        <p class="service-desc">Análise precisa de sinais elétricos com osciloscópio automotivo — detectamos falhas que scanners convencionais não encontram, garantindo diagnósticos mais completos e assertivos.</p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+        <h3 class="service-name">Injeção Eletrônica</h3>
+        <p class="service-desc">Limpeza, calibração e reparo de bicos injetores, corpo de borboleta e sensores da gestão eletrônica para máxima performance e economia de combustível.</p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+        <h3 class="service-name">Ar-Condicionado Automotivo</h3>
+        <p class="service-desc">Recarga de gás, higienização, troca de filtro cabine, reparo de compressores e condensadores. Conforto térmico garantido em qualquer estação.</p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 8v8"/></svg>
+        <h3 class="service-name">Direção Hidráulica</h3>
+        <p class="service-desc">Manutenção e reparo completo da direção hidráulica e elétrica: bomba, caixa de direção, mangueiras e fluido — para uma direção leve e segura.</p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-num">05</span>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        <h3 class="service-name">Mecânica Geral</h3>
+        <p class="service-desc">Revisões completas, troca de óleo, filtros, correia dentada, embreagem, freios e suspensão — tudo que seu veículo precisa para rodar com segurança.</p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-num">06</span>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 10H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h9.5"/><path d="M17 10h2.5a2 2 0 0 1 0 4H17l-3-4 3-4V3a1 1 0 0 1 1 1v6Z"/></svg>
+        <h3 class="service-name">Sistema Elétrico</h3>
+        <p class="service-desc">Diagnóstico e reparo de alternadores, motores de partida, chicotes elétricos e instalações em geral. Resolvemos qualquer problema elétrico no seu veículo.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="reveal">
+      <p class="section-label">Por Que Nos Escolher</p>
+      <h2 class="section-title">Mais de 20 Anos de <em>Confiança</em></h2>
+      <div class="divider"></div>
+      <ul class="why-list">
+        <li>
+          <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div class="why-item-title">Diagnóstico Honesto</div>
+            <div class="why-item-desc">Sem surpresas na nota. Orçamento claro e detalhado antes de qualquer serviço.</div>
+          </div>
+        </li>
+        <li>
+          <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div class="why-item-title">Garantia em Todos os Serviços</div>
+            <div class="why-item-desc">Todos os reparos possuem garantia escrita para sua tranquilidade total.</div>
+          </div>
+        </li>
+        <li>
+          <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div class="why-item-title">Profissionais Qualificados</div>
+            <div class="why-item-desc">Equipe treinada e atualizada com as tecnologias dos veículos modernos.</div>
+          </div>
+        </li>
+        <li>
+          <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div class="why-item-title">Peças Originais e de Qualidade</div>
+            <div class="why-item-desc">Trabalhamos somente com peças confiáveis para garantir durabilidade e segurança.</div>
+          </div>
+        </li>
+        <li>
+          <svg class="why-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div class="why-item-title">Atendimento Personalizado</div>
+            <div class="why-item-desc">Você fala direto com quem resolve. Sem intermediários, sem enrolação.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="why-visual reveal">
+      <div class="circle-badge">
+        <div class="circle-inner">
+          <div class="big">20+</div>
+          <div class="sub">Anos<br>de Experiência</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="reveal">
+      <p class="section-label">Contato & Localização</p>
+      <h2 class="section-title">Fale <em>Conosco</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="contact-item">
+          <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 5.38 5.38l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <div>
+            <div class="contact-item-label">Telefone</div>
+            <div class="contact-item-val"><a href="tel:5134474275">(51) 3447-4275</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div>
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-val"><a href="https://wa.me/5551934474275" target="_blank">(51) 3447-4275</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div>
+            <div class="contact-item-label">E-mail</div>
+            <div class="contact-item-val"><a href="mailto:budelon24@gmail.com">budelon24@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <div class="contact-item-label">Endereço</div>
+            <div class="contact-item-val">Rua Barão do Cerro Largo, 1201<br>Alvorada — RS</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <div class="contact-item-label">Horário de Atendimento</div>
+            <div class="contact-item-val">Seg – Sex: 8h às 18h<br>Sáb: 8h às 12h</div>
+          </div>
+        </div>
+      </div>
+      <div class="map-box">
+        <iframe
+          src="https://maps.google.com/maps?q=Rua+Bar%C3%A3o+do+Cerro+Largo+1201+Alvorada+RS+Brasil&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">VB<span>·</span>AUTOMOTIVE</div>
+    <div class="footer-copy">© 2024 VB Automotive — Todos os direitos reservados</div>
+    <div class="footer-since">EST. 2003</div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5551934474275" target="_blank" title="Fale pelo WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
